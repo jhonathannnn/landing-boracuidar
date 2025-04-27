@@ -4,28 +4,28 @@ import { BookOpenIcon } from '@heroicons/react/24/outline';
 const Content = () => {
   const chapters = [
     {
-      title: 'Capítulo 1: Autoconhecimento',
-      description: 'Entenda a importância de se conhecer e como isso impacta sua vida.',
+      title: 'Capítulo 1: Virada Inesperada',
+      description: 'Como uma demissão pode ser o ponto de partida para uma transformação profunda e cheia de propósito.'
     },
     {
-      title: 'Capítulo 2: Hábitos Saudáveis',
-      description: 'Aprenda a desenvolver e manter hábitos que transformam sua vida.',
+      title: 'Capítulo 2: Sabotadores Internos',
+      description: 'Identifique e vença os pensamentos e hábitos que bloqueiam seus resultados e sua evolução.'
     },
     {
-      title: 'Capítulo 3: Equilíbrio Emocional',
-      description: 'Descubra estratégias para manter o equilíbrio emocional no dia a dia.',
+      title: 'Capítulo 3: Crises e Oportunidades',
+      description: 'Descubra como transformar cada crise em uma oportunidade real de crescimento pessoal e profissional.'
     },
     {
-      title: 'Capítulo 4: Saúde Física',
-      description: 'Conheça práticas essenciais para cuidar do seu corpo.',
+      title: 'Capítulo 4: O Método GoFive',
+      description: 'Destrave seu propósito e conquiste resultados reais aplicando os 5 pilares do método GoFive.'
     },
     {
-      title: 'Capítulo 5: Relacionamentos',
-      description: 'Aprenda a construir e manter relacionamentos saudáveis.',
+      title: 'Capítulo 5: Resiliência e Persistência',
+      description: 'A maioria desiste diante dos obstáculos. Aprenda a não parar e a seguir em frente com consistência.'
     },
     {
-      title: 'Capítulo 6: Propósito',
-      description: 'Encontre seu propósito e viva uma vida mais significativa.',
+      title: 'Capítulo 6: Conexão e Propósito',
+      description: 'Construa uma rede de apoio, fortaleça seu propósito e viva uma vida de realizações.'
     },
   ];
 
