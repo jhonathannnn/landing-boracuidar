@@ -30,7 +30,7 @@ const Content = () => {
   ];
 
   return (
-    <section id="content" className="py-20 bg-light">
+    <section id="content" className="py-20 bg-black text-white">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -39,10 +39,10 @@ const Content = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-neonPurple">
             Conteúdo do Livro
           </h2>
-          <p className="text-lg text-dark/80 max-w-3xl mx-auto">
+          <p className="text-lg text-white/80 max-w-3xl mx-auto">
             Uma jornada completa de transformação através de 6 capítulos 
             fundamentais para sua evolução pessoal.
           </p>
@@ -56,15 +56,15 @@ const Content = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-black p-6 rounded-lg shadow-lg border border-magenta/30 hover:border-neonPurple/60 transition-colors"
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="bg-primary/10 p-2 rounded-full">
-                  <BookOpenIcon className="h-6 w-6 text-primary" />
+                <div className="bg-neonPurple/10 p-2 rounded-full">
+                  <BookOpenIcon className="h-6 w-6 text-neonPurple" />
                 </div>
-                <h3 className="text-xl font-bold">{chapter.title}</h3>
+                <h3 className="text-xl font-bold text-magenta">{chapter.title}</h3>
               </div>
-              <p className="text-dark/80">{chapter.description}</p>
+              <p className="text-white/80">{chapter.description}</p>
             </motion.div>
           ))}
         </div>

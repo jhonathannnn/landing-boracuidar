@@ -8,30 +8,34 @@
   html {
     scroll-behavior: smooth;
   }
-  
   body {
-    @apply bg-light text-dark font-sans;
+    @apply bg-white text-black font-sans;
   }
-
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display font-bold;
+    @apply font-display font-bold text-primary;
   }
 }
 
 @layer components {
   .btn {
-    @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+    @apply px-6 py-3 rounded-xl font-bold transition-all duration-300 shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
   }
-  
   .btn-primary {
-    @apply bg-primary text-white hover:bg-primary/90;
+    @apply bg-primary text-white hover:bg-black hover:text-white hover:scale-105;
   }
-  
   .btn-secondary {
-    @apply bg-secondary text-white hover:bg-secondary/90;
+    @apply bg-grayLight text-primary border border-primary hover:bg-primary hover:text-white hover:scale-105;
   }
-  
+  .link {
+    @apply text-primary hover:text-black transition-colors duration-200 underline underline-offset-2;
+  }
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .step-bar {
+    background: linear-gradient(90deg, #eab676 0%, #c68642 100%);
+    border-radius: 4px;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.10), 0 1.5px 0 #b07d3c inset;
+    margin: 0 2px;
   }
 } 

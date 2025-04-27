@@ -13,7 +13,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+    <header className="fixed w-full bg-black/90 backdrop-blur-sm shadow-sm z-50">
       <div className="container-custom py-4">
         <div className="flex items-center justify-between">
           <motion.div
@@ -21,7 +21,7 @@ const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-2xl font-bold text-primary">Bora Cuidar</h1>
+            <h1 className="text-2xl font-bold text-white">Bora Cuidar</h1>
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -30,7 +30,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-dark hover:text-primary transition-colors"
+                className="text-white hover:text-neonPurple transition-colors"
               >
                 {item.name}
               </a>
@@ -49,9 +49,9 @@ const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <XMarkIcon className="h-6 w-6 text-dark" />
+              <XMarkIcon className="h-6 w-6 text-white" />
             ) : (
-              <Bars3Icon className="h-6 w-6 text-dark" />
+              <Bars3Icon className="h-6 w-6 text-white" />
             )}
           </button>
         </div>
@@ -68,7 +68,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="block text-dark hover:text-primary transition-colors"
+                className="block text-white hover:text-neonPurple transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

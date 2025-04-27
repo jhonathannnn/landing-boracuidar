@@ -3,15 +3,15 @@ import { CheckCircleIcon } from '@heroicons/react/24/solid';
 
 const About = () => {
   const features = [
-    'Guia prático para cuidar da saúde física e mental',
-    'Desenvolvimento de hábitos saudáveis',
-    'Estratégias para alcançar o equilíbrio',
-    'Exercícios e reflexões para autoconhecimento',
-    'Dicas para melhorar a qualidade de vida',
+    'Como uma demissão inesperada pode transformar o seu destino.',
+    'Vença os sabotadores internos que bloqueiam seus resultados.',
+    'Transforme cada crise em uma oportunidade de crescimento.',
+    'Destrave seu propósito e conquiste resultados reais com o método GoFive.',
+    'A maioria desiste diante os obstáculos. Não pare!',
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-black text-white">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -20,10 +20,10 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-neonPurple">
             Sobre o Livro
           </h2>
-          <p className="text-lg text-dark/80 max-w-3xl mx-auto">
+          <p className="text-lg text-white/80 max-w-3xl mx-auto">
             "Bora Cuidar" é mais que um livro, é um convite para transformar 
             sua vida através de hábitos saudáveis e autoconhecimento.
           </p>
@@ -36,7 +36,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold mb-6">
+            <h3 className="text-2xl font-bold mb-6 text-magenta">
               O que você vai encontrar
             </h3>
             <ul className="space-y-4">
@@ -49,8 +49,8 @@ const About = () => {
                   viewport={{ once: true }}
                   className="flex items-start gap-3"
                 >
-                  <CheckCircleIcon className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                  <span className="text-dark/90">{feature}</span>
+                  <CheckCircleIcon className="h-6 w-6 text-neonPurple flex-shrink-0 mt-1" />
+                  <span className="text-white/90">{feature}</span>
                 </motion.li>
               ))}
             </ul>
@@ -61,16 +61,16 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-light p-8 rounded-lg shadow-lg"
+            className="bg-black p-8 rounded-lg shadow-lg border border-neonPurple/30"
           >
-            <h3 className="text-2xl font-bold mb-4">Dedicação</h3>
-            <p className="text-dark/80 mb-6">
+            <h3 className="text-2xl font-bold mb-4 text-neonPurple">Dedicação</h3>
+            <p className="text-white/80 mb-6">
               "Aos meus pais, que me ensinaram o valor do cuidado e do amor próprio. 
               Aos meus amigos, que sempre me apoiaram em minha jornada. E a todos 
               aqueles que buscam uma vida mais saudável e equilibrada."
             </p>
-            <h3 className="text-2xl font-bold mb-4">Introdução</h3>
-            <p className="text-dark/80">
+            <h3 className="text-2xl font-bold mb-4 text-magenta">Introdução</h3>
+            <p className="text-white/80">
               "Neste livro, compartilho minha jornada de autoconhecimento e 
               desenvolvimento pessoal. Através de experiências práticas e 
               reflexões profundas, você será guiado em uma transformação 

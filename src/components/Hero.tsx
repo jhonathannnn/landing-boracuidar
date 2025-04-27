@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import capaLivro from '../assets/capa.png';
 
 const Hero = () => {
   return (
-    <section className="pt-32 pb-20 bg-gradient-to-br from-light to-secondary/10">
+    <section className="pt-32 pb-20 bg-white text-black">
       <div className="container-custom">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -11,14 +12,11 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Transforme sua vida com{' '}
-              <span className="text-primary">Bora Cuidar</span>
+            <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-primary drop-shadow-lg">
+              Transforme sua vida com <span className="text-black">Bora Cuidar</span>
             </h1>
-            <p className="text-lg text-dark/80 mb-8">
-              Um guia prático para cuidar da sua saúde física e mental, 
-              desenvolvendo hábitos saudáveis e alcançando o equilíbrio 
-              que você sempre desejou.
+            <p className="text-xl text-black/80 mb-8">
+              Um guia prático para cuidar da sua saúde física e mental, com hábitos vibrantes!
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -30,10 +28,24 @@ const Hero = () => {
               </a>
               <a
                 href="#about"
-                className="btn bg-white text-dark border-2 border-primary hover:bg-primary/10"
+                className="btn btn-secondary"
               >
                 Saiba Mais
               </a>
+            </div>
+            <div className="flex gap-2 mt-8">
+              <span className="step-bar" style={{ height: 8, width: 32, display: 'inline-block' }} />
+              <span className="step-bar" style={{ height: 8, width: 32, display: 'inline-block' }} />
+              <span className="step-bar" style={{ height: 8, width: 32, display: 'inline-block' }} />
+              <span className="step-bar" style={{ height: 8, width: 32, display: 'inline-block' }} />
+              <span className="step-bar" style={{ height: 8, width: 32, display: 'inline-block' }} />
+            </div>
+            <div className="mt-8 bg-white/90 border-l-4 border-primary shadow-lg rounded-lg p-4 max-w-xl mx-auto">
+              <h4 className="text-lg font-bold text-primary mb-2">Prefácio de Flávio Augusto</h4>
+              <p className="italic text-black/80 mb-2">
+                “Por meio de sua própria experiência, Jhonathan Santos oferece um método autêntico para transformar o medo em movimento, o desejo em plano e a ação em conquista.”
+              </p>
+              <span className="block text-xs text-black/60">Sobre o método GoFive</span>
             </div>
           </motion.div>
           
@@ -45,13 +57,11 @@ const Hero = () => {
           >
             <div className="relative z-10">
               <img
-                src="/book-cover.jpg"
+                src={capaLivro}
                 alt="Capa do livro Bora Cuidar"
-                className="rounded-lg shadow-2xl w-full max-w-md mx-auto"
+                className="rounded-2xl shadow-2xl border-4 border-primary w-full max-w-md mx-auto bg-white"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent rounded-full opacity-20" />
-            <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary rounded-full opacity-20" />
           </motion.div>
         </div>
       </div>
