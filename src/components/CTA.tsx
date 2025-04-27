@@ -30,9 +30,6 @@ const CTA = () => {
               <ArrowRightIcon className="h-5 w-5 ml-2" />
             </button>
           </motion.div>
-          <p className="mt-6 text-white/80">
-            Garantia de 7 dias ou seu dinheiro de volta
-          </p>
         </motion.div>
       </div>
     </section>

@@ -20,7 +20,7 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-neonPurple">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
             Sobre o Livro
           </h2>
           <p className="text-lg text-white/80 max-w-3xl mx-auto">
@@ -36,7 +36,7 @@ const About = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold mb-6 text-magenta">
+            <h3 className="text-2xl font-bold mb-6 text-primary">
               O que você vai encontrar
             </h3>
             <ul className="space-y-4">
@@ -49,7 +49,7 @@ const About = () => {
                   viewport={{ once: true }}
                   className="flex items-start gap-3"
                 >
-                  <CheckCircleIcon className="h-6 w-6 text-neonPurple flex-shrink-0 mt-1" />
+                  <CheckCircleIcon className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                   <span className="text-white/90">{feature}</span>
                 </motion.li>
               ))}
@@ -61,15 +61,15 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-black p-8 rounded-lg shadow-lg border border-neonPurple/30"
+            className="bg-black p-8 rounded-lg shadow-lg border border-primary/30"
           >
-            <h3 className="text-2xl font-bold mb-4 text-neonPurple">Dedicação</h3>
+            <h3 className="text-2xl font-bold mb-4 text-primary">Dedicação</h3>
             <p className="text-white/80 mb-6">
               "Aos meus pais, que me ensinaram o valor do cuidado e do amor próprio. 
               Aos meus amigos, que sempre me apoiaram em minha jornada. E a todos 
               aqueles que buscam uma vida mais saudável e equilibrada."
             </p>
-            <h3 className="text-2xl font-bold mb-4 text-magenta">Introdução</h3>
+            <h3 className="text-2xl font-bold mb-4 text-primary">Introdução</h3>
             <p className="text-white/80">
               "Neste livro, compartilho minha jornada de autoconhecimento e 
               desenvolvimento pessoal. Através de experiências práticas e 

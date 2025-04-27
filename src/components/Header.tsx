@@ -25,12 +25,12 @@ const Header = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-4">
             {menuItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-white hover:text-neonPurple transition-colors"
+                className="text-white px-4 py-2 rounded-xl transition-all duration-300 hover:bg-primary hover:text-white hover:scale-105"
               >
                 {item.name}
               </a>

@@ -1,21 +1,18 @@
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    './src/**/*.{js,jsx,ts,tsx}',
+    './public/index.html',
   ],
   theme: {
     extend: {
       colors: {
-        primary: '#C1001F',      // Vermelho vibrante (BORA CUIDAR)
-        black: '#000000',        // Preto intenso
-        white: '#FFFFFF',        // Branco puro
-        grayLight: '#F5F5F5',    // Cinza claro
-        wood: '#F6CBA1',         // Amadeirado claro (degraus)
+        primary: '#d90429', // vermelho vibrante para destacar
+        grayLight: '#f3f4f6',
       },
       fontFamily: {
-        sans: ['Poppins', 'Inter', 'sans-serif'],
-        display: ['Poppins', 'sans-serif'],
+        sans: ['Inter', 'Poppins', 'sans-serif'],
       },
     },
   },
   plugins: [],
-} 
+}; 

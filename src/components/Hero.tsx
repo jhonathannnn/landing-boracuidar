@@ -33,13 +33,6 @@ const Hero = () => {
                 Saiba Mais
               </a>
             </div>
-            <div className="flex gap-2 mt-8">
-              <span className="step-bar" style={{ height: 8, width: 32, display: 'inline-block' }} />
-              <span className="step-bar" style={{ height: 8, width: 32, display: 'inline-block' }} />
-              <span className="step-bar" style={{ height: 8, width: 32, display: 'inline-block' }} />
-              <span className="step-bar" style={{ height: 8, width: 32, display: 'inline-block' }} />
-              <span className="step-bar" style={{ height: 8, width: 32, display: 'inline-block' }} />
-            </div>
             <div className="mt-8 bg-white/90 border-l-4 border-primary shadow-lg rounded-lg p-4 max-w-xl mx-auto">
               <h4 className="text-lg font-bold text-primary mb-2">Prefácio de Flávio Augusto</h4>
               <p className="italic text-black/80 mb-2">
