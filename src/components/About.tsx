@@ -23,9 +23,8 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
             Sobre o Livro
           </h2>
-          <p className="text-lg text-white/80 max-w-3xl mx-auto">
-            "Bora Cuidar" é mais que um livro, é um convite para transformar 
-            sua vida através de hábitos saudáveis e autoconhecimento.
+          <p className="text-lg text-black/80 max-w-3xl mx-auto mb-8">
+            "Bora Cuidar" é um chamado à ação para quem deseja dar uma virada na vida, superar crises, vencer sabotadores internos e conquistar resultados reais com propósito. Inspirado em experiências reais, o livro apresenta o método GoFive e mostra como transformar desafios em oportunidades de crescimento pessoal e profissional.
           </p>
         </motion.div>
 
